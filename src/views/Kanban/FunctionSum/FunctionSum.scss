@@ -1,0 +1,54 @@
+.functionSum{
+    background:rgba(47,63,78,1);
+    width: 100%;
+    border: .1px solid transparent;
+    position: relative;
+    .tableTitle{
+        margin-top: 80px;
+        margin-left: 4%;
+    }
+    .tableTitleTwo{
+        margin-left: 4%;
+        margin-top: 40px;
+    }
+    .row{   
+        margin-top: 40px;
+        .col-50{
+            width: 45%;
+            height: 350px;
+            display: inline-block;
+            background-color: #22303C;
+            margin-top: 30px;
+            border-radius: 5px;
+            position: relative;
+            .sort{
+                color: rgb(255, 255, 255);
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background-color:#38454F;
+                width:50px;
+                height:23px;
+                text-align: center;
+                line-height: 23px;
+                z-index: 800;
+            }
+        }
+        .col-50:nth-child(odd){
+            margin-right: 10px;
+            margin-left: 4%;
+        }
+        .col-50:nth-child(even){
+            margin-left: 10px;
+        }
+    }
+    .row:last-child{
+        margin-bottom: 20px;
+        .col-50{
+            height: 600px;
+        }
+    }
+    .first-row{
+        margin-top: 80px;
+    }
+}

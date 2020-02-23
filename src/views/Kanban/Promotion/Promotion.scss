@@ -1,0 +1,90 @@
+.promotion{
+    background:rgba(47,63,78,1);
+    width: 100%;
+    min-height: 100%;
+    border: .1px solid transparent;
+    position: relative;
+    .tableTitle{
+        margin-top: 80px;
+        margin-left: 4%;
+    }
+    .tableTitleTwo{
+        margin-left: 4%;
+        margin-top: 40px;
+    }
+    .row{   
+        margin-top: 40px;
+        margin-left: 4%;
+        margin-right: 4%;
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        .col-33{
+            width: 30%;
+            height: 193px;
+            display: inline-block;
+            background-image: url('../../../assets/images/Kanban/promotion/bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 30px;
+            border-radius: 5px;
+            border: 1px solid #06999E;
+            .color{
+                color: #33FFCC;
+            }
+            .first{
+                display: flex;
+            }
+            .first:last-child{
+                margin-bottom: 5px;
+            }
+            .col-30{
+                width: 30%;
+                text-align: center;
+            }
+            .col-40{
+                width: 40%;
+            }
+            .title-row{
+                height: 60px;
+                border-bottom: 1px solid #fff;
+                margin: 0 15px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+            }
+            .content-row{
+                height: 89px;
+                border-bottom: 1px solid #fff;
+                margin: 0 15px;
+                color: #fff;
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .footer{
+                height: 42px;
+                margin: 0 15px;
+                color: #fff;
+                font-size: 15px;
+                line-height: 42px;
+            }
+        }
+        .col-33:nth-child(3n+2),.col-33:nth-child(3n+3){
+            margin-left: 4%;
+        }
+    }
+    .row:last-child{
+        margin-bottom: 20px;
+    }
+    .first-row{
+        margin-top: 80px;
+    }
+}

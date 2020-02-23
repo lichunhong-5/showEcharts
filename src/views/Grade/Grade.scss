@@ -1,0 +1,46 @@
+$img_url: '../../assets/images/Login/bg.png';
+.Grade{
+    background-image: url($img_url);
+    width: 100%;
+    height: 100%;
+    border: .1px solid transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .flex{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .col-25{
+            width: 25%;
+            height: 109px;
+            position: relative;
+            flex-shrink: 0;
+            .bg{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            .desc{
+                position: relative;
+                color: #fff;
+                font-size: 16px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-top: -5px;
+                justify-content: center;
+                img{
+                    width: 58px;
+                    height: 58px;
+                    // margin-left: 15%;
+                    margin-right: 10%;
+                }
+            }
+        }
+    }
+}

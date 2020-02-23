@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="/Users/chunhongli/Desktop/incubator-echarts-4.5.0/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div style="padding-bottom:30px;background-color: #22303C;width: 850px;border: 1px solid transparent;">
+        <div style="text-align: right;margin: 20px 30px 0 0">
+            <img src="./sign.png" alt="" style="width: 300px">
+        </div>
+        <div id="main" style="width: 800px;height:200px;"></div>
+        <div id="main1" style="width: 800px;height:200px;"></div>
+        <div id="main2" style="width: 800px;height:200px;"></div>
+    </div>
+    
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        option = {
+            backgroundColor: '#22303C',
+            title: {
+                subtext: '上海',
+                subtextStyle:{
+                    color: '#fff',
+                    fontSize: 16
+                },
+                left: 20
+            },
+            grid: {
+                left: 25,
+                right: '4%',
+                bottom: '3%',
+                top: 40,
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                axisLine:{
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: { // 网格
+                    show: false
+                },
+                axisLabel: {  //刻度标签
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: ['周一', '周二', '周三'],
+                axisLine:{
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    color: '#fff',
+                    margin: 15
+                }
+            },
+            series: [
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside',
+                            color: '#fff'
+                        }
+                    },
+                    data: [20, 32, 31],
+                    itemStyle:{
+                        color: '#DF6367'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside',
+                            color: '#fff'
+                        }
+                    },
+                    data: [12, 12, 11],
+                    itemStyle: {
+                        color: '#E53935'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside',
+                            color: '#fff'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#C62727'
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+
+        var myChart1 = echarts.init(document.getElementById('main1'));
+        option = {
+            title: {
+                subtext: '华东',
+                subtextStyle:{
+                    color: '#fff',
+                    fontSize: 16
+                },
+                left: 20
+            },
+            backgroundColor: '#22303C',
+            grid: {
+                left: 25,
+                right: '4%',
+                bottom: '3%',
+                top: 40,
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                axisLine:{
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: { // 网格
+                    show: false
+                },
+                axisLabel: {  //刻度标签
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: ['周一', '周二', '周三'],
+                axisLine:{
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    color: '#fff',
+                    margin: 15
+                }
+            },
+            series: [
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [20, 32, 31],
+                    itemStyle:{
+                        color: '#7986CB'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [12, 12, 11],
+                    itemStyle: {
+                        color: '#5C6BC0'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#3F51B5'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#303F9F'
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option);
+
+        var myChart2 = echarts.init(document.getElementById('main2'));
+        option = {
+            title: {
+                subtext: '华西',
+                subtextStyle:{
+                    color: '#fff',
+                    fontSize: 16
+                },
+                left: 20
+            },
+            backgroundColor: '#22303C',
+            grid: {
+                left: 25,
+                right: '4%',
+                bottom: '3%',
+                top: 40,
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                axisLine:{
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: { // 网格
+                    show: false
+                },
+                axisLabel: {  //刻度标签
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: ['周一', '周二', '周三'],
+                axisLine:{
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    color: '#fff',
+                    margin: 15
+                }
+            },
+            series: [
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [20, 32, 31],
+                    itemStyle:{
+                        color: '#81C784'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [12, 12, 11],
+                    itemStyle: {
+                        color: '#4CAF50'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#43A047'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#388E3C'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#1C7F33'
+                    }
+                },
+                {
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+                        }
+                    },
+                    data: [22, 18, 11],
+                    itemStyle: {
+                        color: '#106235'
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart2.setOption(option);
+    </script>
+</body>
+
+</html>

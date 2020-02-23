@@ -1,0 +1,70 @@
+$img_url: '../../assets/images/Login/bg.png';
+.login{
+  background-image: url($img_url);
+  width: 100%;
+  height: 100%;
+  border: .1px solid transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .img-top{
+    text-align: $text-align-center;
+    margin-top: 109px;
+    img{
+      width: 426px;
+    }
+  }
+  .img-bottom{
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -68px;
+    img{
+      width: 136px;
+    }
+  }
+  .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: -137px;
+    .row{
+      font-size: 14px;
+      color: #fff;
+      input{
+        border: 0;
+        padding: 0 13px;
+        width: 240px;
+        height: 40px;
+        font-size: 12px;
+        box-sizing: border-box;
+        background:rgba(247,248,249,0.1);
+        border:1px solid rgba(255,255,255,0.5);
+        color: #fff;
+      }
+      input::placeholder{
+        color: #fff;
+      }
+      input:focus{
+        outline: none;
+      }
+      button{
+        font-size: 17px;
+        color: #fff;
+        width:241px;
+        height:44px;
+        background:linear-gradient(95deg,rgba(15,219,220,1) 0%,rgba(12,158,255,1) 100%);
+        border: 0;
+      }
+      button:focus{
+        outline: none;
+      }
+    }
+    .row:nth-child(2){
+      margin-top: 22px;
+    }
+    .row:last-child{
+      margin-top: 46px;
+    }
+  }
+}

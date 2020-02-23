@@ -1,0 +1,30 @@
+$img_url: '../../../assets/images/Login/bg.png';
+.chooseInfo{
+    background-image: url($img_url);
+    width: 100%;
+    height: 100%;
+    border: .1px solid transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .img-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 99%;
+        margin-top: -50px;
+        img{
+            width: 201px;
+            height: 262px;
+            margin-right: 28px;
+        }
+    }
+    .img-bottom{
+        position: fixed;
+        bottom: 60px;
+        left: 50%;
+        margin-left: -68px;
+        img{
+          width: 136px;
+        }
+      }
+}

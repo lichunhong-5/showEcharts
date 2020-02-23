@@ -1,0 +1,74 @@
+.kpiDis{
+    background:rgba(47,63,78,1);
+    width: 100%;
+    border: .1px solid transparent;
+    position: relative;
+    .btn{
+        position: absolute;
+        right: 14px;
+        top: 9px;
+        width: 180px;
+        height: 28px;
+        z-index: 100;
+        button{
+            width: 33%;
+            height: 100%;
+            color: #fff;
+            background:rgba(63,81,97,1);
+            border-radius:0px 2px 2px 0px;
+            border: 0;
+            font-size: 11px;
+        }
+        button:focus{
+            outline: none;
+        }
+        .active{
+            background-color: #00B3BA;
+        }
+
+    }
+    .staff-row{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .row-staff{
+            width: 92%;
+            height: 393px;
+            margin-top: 110px;
+            background-color: #22303C;
+            border-radius: 5px;
+        }
+    }
+    .tableTitle{
+        margin-top: 80px;
+        margin-left: 4%;
+    }
+    .tableTitleTwo{
+        margin-left: 4%;
+        margin-top: 40px;
+    }
+    .row{   
+        margin-top: 40px;
+        .col-50{
+            width: 45%;
+            height: 343px;
+            display: inline-block;
+            background-color: #22303C;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .col-50:nth-child(odd){
+            margin-right: 10px;
+            margin-left: 4%;
+        }
+        .col-50:nth-child(even){
+            margin-left: 10px;
+        }
+    }
+    .row-func{
+        margin-top: 80px;
+    }
+    .row:last-child{
+        margin-bottom: 20px;
+    }
+}

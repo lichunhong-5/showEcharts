@@ -1,0 +1,285 @@
+.employeeGrade{
+    background:rgba(47,63,78,1);
+    width: 100%;
+    border: .1px solid transparent;
+    min-height: 100%;
+    position: relative;
+    .select-btn{
+        display: flex;
+        position: absolute;
+        right: 15px;
+        .el-select{
+            width: 100px;
+            background-color: #3F5161;
+            border-radius: 2px;
+        }
+        .el-tag__close{
+            display: none;
+        }
+        .el-tag{
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-size: 12px;
+            color: #fff;
+        }
+        .el-select__caret{
+            line-height: 28px;
+        }
+        .el-select__tags{
+            margin-left: 5px;
+            max-width: 70%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+        }
+        input{
+            height: 28px !important;
+            width: 70%;
+            background-color: #3F5161;
+            border: 0;
+            padding: 0 0 0 10px;
+            font-size: 12px;
+            color: #fff;
+            line-height: 28px;
+        }
+        .btn{
+            width: 58px;
+            height: 28px;
+            background-color: #3F5161;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            border-radius: 2px;
+        }
+        .btn:last-child{
+            margin-left: 5px;
+        }
+        .active{
+            background-color: #00B3BA;
+        }
+    }
+
+
+
+    .tableTitle{
+        margin-top: 80px;
+        margin-left: 4%;
+    }
+    .tableTitleTwo{
+        margin-left: 4%;
+        margin-top: 40px;
+    }
+    .row{   
+        margin-top: 40px;
+        margin-left: 4%;
+        margin-right: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        .col-33{
+            width: 32%;
+            height: 180px;
+            display: flex;
+            margin-top: 30px;
+            border-radius: 5px;
+            margin-right: 1.5%;
+            background-image: url('../../../assets/images/Kanban/promotion/bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            border: 1px solid #06999E;
+            .col-40{
+                width: 45%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    // width: 70%;
+                    height: 70%;
+                    border: 1px solid #06999E;
+                }
+                .promote{
+                    width: 45px;
+                    height: 45px;
+                    // position: absolute;
+                    // top: 15%;
+                    // left: 15%;
+                    border: 0;
+                }
+            }
+            .col-60{
+                width: 55%;
+                color: #fff;
+                padding: 20px 0;
+                div{
+                    margin-bottom: 5px;
+                    transform: scale(.875);
+                }
+                .staffName{
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    position: relative;
+                    p{
+                        display: inline-block;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 10px;
+                        margin: 0;
+                        padding: 0;
+                        z-index: 100;
+                        background-image: url('../../../assets/images/grade/employee/com.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        text-align: center;
+                        width: 80px;
+                        height: 20px;
+                    }
+                }
+                .jobName{
+                    span{
+                        border-bottom: 1px solid #fff;
+                        padding-bottom: 2px;
+                    }
+                    margin-bottom: 10px;
+                    margin-right: 15px;
+                }
+                .color{
+                    span{
+                        display: inline-block;
+                        margin-right: 5px;
+                        width: 35px;
+                        height: 15px;
+                        text-align: center;
+                        line-height: 16px;
+                    }
+                }
+                .deepRed{background-color: #AC2526;}
+                .red{background-color: #F66364;}
+                .deepBlue{background-color: #3C59AD;}
+                .blue{background-color: #6A90FF;}
+                .deepGreen{background-color: #096B3A;}
+                .green{background-color: #1ABB6B;}
+                .white{color: #082A19;background-color: #fff;}
+
+            }
+        }
+        .col-33:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+    .row:last-child{
+        margin-bottom: 20px;
+    }
+    .first-row{
+        margin-top: 80px;
+    }
+    .btn-footer{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 60px;
+        div{
+            display: inline-block;
+            width: 172px;
+            height: 48px;
+            color: #fff;
+            font-size: 15px;
+            line-height: 48px;
+            text-align: center;
+            margin-right: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .button-o{
+            background-image: url('../../../assets/images/grade/employee/btn-o.png');
+        }
+        .button-t{
+            background-image: url('../../../assets/images/grade/employee/btn-t.png');
+        }
+    }
+    .popover{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: rgba($color: #000000, $alpha: .5);
+        .info{
+            width: 324px;
+            max-height: 600px;
+            overflow: auto;
+            background-color: #22303C;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 11px;
+            position: relative;
+            .close{
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+            div{
+                text-align: center;
+            }
+            .staff{
+                margin: 10px 0 20px 0;
+            }
+            .headimg{
+                margin-top: 30px;
+                position: relative;
+                .promote{
+                    width: 45px;
+                    height: 45px;
+                    // position: absolute;
+                    // top: 15%;
+                    // left: 15%;
+                    border: 0;
+                }
+                img{
+                    width: 30%;
+                    height: auto;
+                    border: 1px solid #20ECEF;
+                }
+            }
+            .row{
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+                .col-45{
+                    width: 45%;
+                    text-align: right;
+                }
+                .col-55{
+                    width: 50%;
+                    text-align: left;
+                    margin-left: 5%;
+                }
+            }
+            .last-row{
+                margin-bottom: 20px;
+            }
+        }
+        .img{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 364px;
+            height: 230px;
+        }
+    }
+}
+.height-100{
+    height: 100%;
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after{
+    display: none;
+}

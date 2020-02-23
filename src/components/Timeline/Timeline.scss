@@ -1,0 +1,39 @@
+.timeline{
+    margin-top: 10px;
+    background-color: #fff;
+
+    .title{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        border-bottom: $border-bott-1px;
+    }
+    div{
+        min-height: 40px;
+        font-size: 1.4rem;        
+        padding: 0 15px;
+        div{
+            padding: 0
+        }
+    }
+    .dis-flex{
+        display: $dis-flex;
+        align-items: $text-align-center;
+    }
+    .dis-flex-start{
+        align-items: start;
+    }
+    .min-height-30px{
+        min-height: 30px;
+    }
+    .font-1_2{
+        font-size: $font-1_2rem;
+    }
+    .width-30{
+        width: 30%;
+    }
+    .width-70{
+        width: 70%;
+        text-align: right
+    }
+}
